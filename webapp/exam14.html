@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+	var arrayGuestbook=[];
+	
+		var guestbookVo = {
+
+			name : "호날두",
+			password : "1234",
+			content : "호우!",
+			showInfo : function() {
+				console.log(this.name + "," + this.password + ","
+						+ this.content)
+			}
+
+		};
+		
+		var guestbookVo2 = {
+
+				name : "손흥민",
+				password : "1234",
+				content : "슈퍼손은슈퍼콘!",
+				showInfo : function() {
+					console.log(this.name + "," + this.password + ","
+							+ this.content)
+				}
+
+			};
+
+
+		guestbookVo.showInfo();
+		
+		arrayGuestbook[0] = guestbookVo;
+		arrayGuestbook[1] = guestbookVo2;
+		
+		console.log(guestbookVo);
+		console.log(guestbookVo2);
+		
+		console.log(arrayGuestbook);
+		
+		guestbookVo2.showInfo();
+		
+		for (var i=0; i<arrayGuestbook.length; i++) {
+			
+			console.log(arrayGuestbook[i].name);
+			
+		}
+		
+		
+		
+	</script>
+
+
+
+</body>
+
+
+
+</html>

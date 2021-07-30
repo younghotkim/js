@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+
+<title>Insert title here</title>
+</head>
+
+<body>
+
+	<script type="text/javascript">
+		//이름이 있는 함수(기명함수, 선언적 함수)
+		
+		//함수 정의 ******정의부터 해석된다
+		function plus(a, b){
+			var sum = a+ b;
+			return sum;
+		}
+		
+		var plusSum = plus(3,5);
+		console.log(plusSum);
+		
+		var result01 = plus(2.7, 5.8);
+		console.log(result01);
+		
+		var result02 = plus("안녕", "하세요");
+		console.log(result02);
+		
+		
+		
+		
+		//이름이 없는 함수(익명함수)
+		//바로 사용해야 함
+		//혹은 변수에 넣어서 보관 할 수 있다
+		
+		var minus =
+		function (a,b) {
+			var sum = a - b;
+			return sum;
+		}
+		
+		var result03 = minus(5,4)
+		console.log(result03);
+		
+	</script>
+
+	<script type="text/javascript">
+	
+	var result03 = plus (3,5);
+	console.log(result03);
+	
+	</script>
+
+
+</body>
+
+
+</html>

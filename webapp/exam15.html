@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1 id="event">이벤트</h1>
+	<h2>호우!</h2>
+	<h2>호우!!</h2>
+	<h2>호우!!!</h2>
+	<h3 class="class_h3">호우~</h3>
+	<h3 class="class_h3">호우~~</h3>
+	<h3 class="class_h3">호우~~~</h3>
+	
+	<div>
+		<button id="btn">자바스크립트 테스트 버튼</button>
+		<p id="display">이름 출력 영역</p>
+	</div>
+
+	<script type="text/javascript">
+		window.onload = function() {
+			var testButton = document.getElementById("btn");
+			var testArea = document.getElementById("display");
+			
+			//id로 가져오기
+			
+			//html 태그로 가져오기(array)
+			var h2Array = document.getElementsByTagName("h2");
+		
+			
+			//클래스로 가져오기
+			var h3Array = document.getElementsByClassName("class_h3");
+			
+			var event = document.getElementById("event");
+			
+			
+			testButton.onclick = function() {
+				testArea.innerHTML = "호우!";
+			};
+			
+			h2Array[0].onclick = function() {
+				testArea.innerHTML = "호우!!!!";
+			};
+			
+			h3Array[2].onclick = function() {
+				event.innerHTML = "https:www.ronaldo.com";
+			};
+		};
+	</script>
+
+</body>
+
+<!-- m = data html태그 / view = css / c = control js -->
+
+
+</html>
