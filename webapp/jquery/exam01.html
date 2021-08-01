@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/js/assets/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div>
+		<button id="btn">자바스크립트 테스트 버튼</button>
+		<p id="display">이름 출력 영역</p>
+	</div>
+
+	<script type="text/javascript">
+	/*
+		var testButton = document.getElementById("btn");
+		var testArea = document.getElementById("display");
+
+		testButton.onclick = function() {
+			testArea.innerHTML = "호우!";
+		};
+	*/
+	
+	
+	$("#btn").on("click", function() {
+		
+		$("#display").html("호날두");
+	});
+	
+	</script>
+
+
+
+</body>
+
+
+
+</html>
