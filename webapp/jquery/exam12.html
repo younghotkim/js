@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript" src="/jquery/jquery/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="/js/assets/jquery/jquery-1.12.4.js"></script>
 <style>
 	.red {color: red;}
 	
@@ -25,6 +25,32 @@
 	<textarea name="content2">산토끼토끼야</textarea>
 	
 </body>
+
+<script type="text/javascript">
+
+$("[name='name']").val("호날두");
+$("[name='password']").val("1234");
+$("[name='content']").val("호우!");
+
+var name2 = $("[name='name2']").val();
+var password2 = $("[name='password2']").val();
+var content2 = $("[name='content2']").val();
+
+var guestVo = {
+		
+		name: name2,
+		password: password2,
+		content: content2
+		
+}
+
+console.log(guestVo);
+
+
+
+
+
+</script>
 	
 
 </html>

@@ -2,20 +2,48 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript" src="/jqueryex/jquery/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="/js/assets/jquery/jquery-1.12.4.js"></script>
 <title>Insert title here</title>
 </head>
 <body>
-	
+
 	<ul>
 		<li id="first" class="red">첫번째 아이템입니다.</li>
 		<li id="second" class="blue"><strong>두번째 아이템입니다.</strong></li>
 		<li id="third" class="del">세번째아이템입니다.</li>
 		<li><strong>네번째 아이템입니다.</strong></li>
-		
+
 	</ul>
-	<input id="btn" type="button" VALUE="li요소추가" />
+	<button id="btn" type="button">li 추가</button>
 </body>
+
+<script type="text/javascript">
+	$("#btn").on("click", function() {
+
+		console.log("버튼");
+
+		$("ul").append("<li id='five'>다섯번째 아이템입니다.</li>");
+		$("ul").append("<li id='six'>여섯번째 아이템입니다.</li>");
+
+	});
+
+	/*
+	$("li").on("click", function() {
+
+		var $this = $(this);
+		console.log($this);
+	});
+	 */
+
+	$("ul").on("click", "li", function() {
+
+		var $this = $(this);
+		console.log($this);
+		$(this).text("호날두");
+
+	});
+</script>
+
 
 
 </html>

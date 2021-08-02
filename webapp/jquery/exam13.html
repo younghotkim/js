@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript" src="/jquery/jquery/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="/js/assets/jquery/jquery-1.12.4.js"></script>
 <title>Insert title here</title>
 </head>
 <body>
@@ -12,6 +12,21 @@
 	</div>
 
 </body>
+
+<script type="text/javascript">
+
+	//"btn"클릭 했을때 -->이벤트
+	$("#btn").on("dblclick", function(){
+		console.log("버튼클릭");
+		$("#display").text("호날두");
+		$("#display").css("color","red");
+		$("#display").prepend("cristiano ");
+		$("#display").append(" 호우~!");
+	});
+
+
+
+</script>
 
 
 
